@@ -8,10 +8,10 @@ HOMEPAGE="https://logentries.com/"
 
 AUTHOR=logentries
 
-SRC_URI="https://github.com/$AUTHOR/${PN}/tarball/v${PV} ->
-${PN}-git-${PV}.tgz"
+SRC_URI="https://rep.logentries.com/le/le.py ->
+${PN}-${PV}.tgz"
 S="${WORKDIR}/logentries-${PN}-*"
-KEYWORDS="x86"
+KEYWORDS="x86 sparc mips ~ppc ~ppc-macos -ia64"
 USE=""
 DEPEND="dev-lang/python
     dev-python/simplejson
